@@ -4,7 +4,7 @@ import seaborn as sns
 
 #a biblioteca seaborn tbm é uma opção
 
-notas = pd.read_csv("/Users/mariafernandafreitasbarbosamarques/Desktop/introducao-a-data-science-aula0/aula0/ml-latest-small/ratings.csv")
+notas = pd.read_csv("ratings.csv")
 
 #notas.head()
 #print(notas)
@@ -23,8 +23,8 @@ n_median = n.median()
 #print(notas.nota)
 #n.matplotlib.pyplot.plot(kind='hist')
 #matplotlib.pyplot.show()
-#plt.hist(n) #plota oq eu quero, cria tabela
-#plt.show() #mostra a tabela
+plt.hist(n) #plota oq eu quero, cria tabela
+plt.show() #mostra a tabela
 
 print(n.describe()) #descreve as medidas
 sns.boxplot(n) #cria o boxplot

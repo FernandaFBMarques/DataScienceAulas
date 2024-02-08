@@ -2,7 +2,7 @@ Links:
     - pandas.dataframe: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html
     - pandas.series = https://pandas.pydata.org/docs/reference/api/pandas.Series.html
 
-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 >>>>>>Aula 01:<<<<<<<
 
     Aprendizados:
@@ -13,6 +13,21 @@ Links:
         - Contar dados; e
         - Melhorar a visualização das informações.
 
-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 >>>>>>Aula 02:<<<<<<<
-Eu acho que é nome_do_arquivo.head pq é uma lista encadeada, nun sei ?
+Eu acho que é nome_do_arquivo.head pq é uma lista encadeada, num sei ?
+
+    QUERIES -> se referem a consultas específicas usadas para extrair, filtrar e manipular dados de diversas fontes.
+    São como perguntas diretas feitas aos dados.
+
+    HISTOGRAMA -> Um histograma é um tipo de gráfico de barras que representa a frequência de dados em intervalos específicos.
+    É composto por colunas, e cada coluna representa a frequência (quantidade) de dados dentro de um determinado intervalo.
+    Quanto maior a coluna, mais dados caem naquele intervalo.
+
+    Geralmente o seaborn gera gráficos boxplot e o pandas é capaz de fazer histogramas, então:
+        - seaborn -> gráficos boxplot.
+        - pandas -> histogramas.
+
+    OBS: O Pandas também é capaz de gerar gráficos boxplot, assim como o Seaborn também é capaz de fazer histogramas.
+    Nesse caso, o histograma do Seaborn é chamado de "gráfico de distribuição, ou distplot().
+    Atenção: a função distplot() está depreciada e podemos utilizar a função histplot():
