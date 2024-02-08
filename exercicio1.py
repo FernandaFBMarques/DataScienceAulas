@@ -2,7 +2,7 @@ import pandas as pd # estou importando a biblioteca pandas e a apelidando de pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-notas = pd.read_csv("/Users/mariafernandafreitasbarbosamarques/Desktop/introducao-a-data-science-aula0/aula0/ml-latest-small/ratings.csv") # o Pandas esta lendo o nosso arquivo CSV
+notas = pd.read_csv("ratings.csv") # o Pandas esta lendo o nosso arquivo CSV
 
 print(notas.head()) # mostra os 5 primeiros dados
 
