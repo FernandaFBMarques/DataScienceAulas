@@ -1,0 +1,17 @@
+Links:
+    - pandas.dataframe: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html
+    - pandas.series = https://pandas.pydata.org/docs/reference/api/pandas.Series.html
+
+----------------------------------------------------------------------------------------------------
+>>>>>>Aula 01:<<<<<<<
+
+    Aprendizados:
+        - Importar pandas (biblioteca de análise de dados)
+        - Ler dados CSV;
+        - Fazer upload de arquivo para o Google Colab;
+        - Renomear colunas;
+        - Contar dados; e
+        - Melhorar a visualização das informações.
+
+----------------------------------------------------------------------------------------------------
+>>>>>>Aula 02:<<<<<<<
