@@ -22,3 +22,32 @@ print("Notas que aparecem: ",unicas, "\nQuantidade de vezes que aparece cada not
 # considerando o total de avaliações feitas pelo usuário.
 # ->R: utilizar  método value_counts() das series do pandas
 
+######################resolução#################################
+
+notas = pd.read_csv("ratings.csv")
+notas.head()
+
+notas.shape
+
+notas.columns = ["usuarioId", "filmeId", "nota", "momento"]
+notas.head()
+
+notas['nota'].unique()
+
+notas['nota'].value_counts()
+
+notas['nota'].mean()
+
+print("Media",notas['nota'].mean())
+print("Mediana",notas['nota'].median())
+
+notas.nota.head()
+
+notas.nota.plot(kind='hist')
+
+notas.nota.describe()
+
+#import seaborn as sns
+
+sns.boxplot(notas.nota)
+
