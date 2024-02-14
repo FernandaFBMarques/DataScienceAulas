@@ -1,6 +1,7 @@
 Links:
     - pandas.dataframe: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html
-    - pandas.series = https://pandas.pydata.org/docs/reference/api/pandas.Series.html
+    - pandas.series: https://pandas.pydata.org/docs/reference/api/pandas.Series.html
+    - documentação matplotlib: https://matplotlib.org/stable/users/index.html
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 >>>>>>Aula 01:<<<<<<<
@@ -29,5 +30,18 @@ Eu acho que é nome_do_arquivo.head pq é uma lista encadeada, num sei ?
         - pandas -> histogramas.
 
     OBS: O Pandas também é capaz de gerar gráficos boxplot, assim como o Seaborn também é capaz de fazer histogramas.
-    Nesse caso, o histograma do Seaborn é chamado de "gráfico de distribuição, ou distplot().
+    Nesse caso, o histograma do Seaborn é chamado de "gráfico de distribuição", ou distplot().
     Atenção: a função distplot() está depreciada e podemos utilizar a função histplot():
+
+    o histograma é gerado com base em um número de separações (as barras), no seaborn eu tenho mais separações do que no Pandas,
+    uso o arguemento bins para poder definir o número de separações. -> sns.histplot(mean_movie_rating, kde=True, bins=10)
+
+    O interessante a ser apreendido nesse caso é que devemos tomar cuidado na escolha desse parâmetro,
+    já que ela pode influenciar na análise dos nossos dados!
+
+    Na prática, o Seaborn utiliza algumas fórmulas pré-determinadas para definir uma quantidade de bins interessante
+    para o conjunto de dados que lhe foi alimentado.
+
+    A curva que o Seaborn exibe consiste em uma aproximação visual da distribuição dos dados (calculada matematicamente, é claro).
+
+    Para gerar esses gráficos, tanto o Seaborn quanto o Pandas utilizam uma biblioteca de baixo nível, chamada Matplotlib.
