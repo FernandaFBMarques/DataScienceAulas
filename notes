@@ -45,3 +45,24 @@ Eu acho que é nome_do_arquivo.head pq é uma lista encadeada, num sei ?
     A curva que o Seaborn exibe consiste em uma aproximação visual da distribuição dos dados (calculada matematicamente, é claro).
 
     Para gerar esses gráficos, tanto o Seaborn quanto o Pandas utilizam uma biblioteca de baixo nível, chamada Matplotlib.
+
+    >>>>>>Pergunta Aula 02:<<<<<<<
+    "Ele gostaria de tirar a média das notas dos filmes que estão no IMDB, só que este processo é todo manual.
+    Como ele pode automatizar esse processo, de acordo com o que vimos?"
+
+    R:Utilizando o medias_por_filme = notas.groupby("filmeId").mean().nota
+
+    Aqui pegamos a coluna da nota e alinhamos os filmes em ordem numérica, tiramos as médias e selecionamos a coluna notas,
+    para que o Pandas não tire a média de todas as colunas, só da que selecionamos.
+
+    O histograma também é conhecido como "distribuição de frequências", e é representado em um gráfico de colunas ou de barras
+    a partir de um conjunto de dados previamente tabulado e dividido em classes (uniformes ou não uniformes).
+
+    Já o boxplot, também conhecido como "diagrama de caixa", é um método alternativo para o histograma.
+    Uma de suas particularidades é mostrar a faixa em que está concentrada a mediana dos valores.
+
+
+    Aprendizados:
+        - Trabalhar com query;
+        - Identificar os bins; e
+        - Filtrar apenas uma coluna.
