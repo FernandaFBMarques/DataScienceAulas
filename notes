@@ -75,3 +75,28 @@ a language -> variavel categorica nominal
 budget => orcamento -> variavel quantitativa continuo
 qtde de votos => 1, 2, 3, 4, nao tem 2.5 votos -> variavel quantitativa intervalar
 notas do movielens => 0.5, 1, 1.5,..., 5 nao tem 2.7 -> variavel quantitativa intervalar
+
+    >>>>>>Pergunta Aula 02:<<<<<<<
+    "Amanda quer saber todas as línguas faladas pela empresa. Desse modo, como Amanda pode fazer para ver os valores únicos de línguas?"
+
+    R: Utilizando a função professores.original_language.unique() para deixar os valores únicos
+
+    Com o unique nós pegamos todos os valores que estão no CSV e fazemos eles virarem únicos, por exemplo temos 10 professores que falam
+    inglês e dois professores que falam russo, que vai gerar um array de categoria nominal. Utilizando o unique, podemos pegar todos os
+    valores presentes  no CSV e transformá-los em únicos. Por exemplo, se temos dez professores de língua russa e dois de inglês, o unique
+    vai gerar um array de categoria nominal para russo e inglês.
+
+===variáveis categóricas nominais e ordinais===
+
+    As __variáveis categóricas__ são aquelas que __não possuem valores quantitativos__, mas, ao contrário, são definidas por várias categorias,
+    ou seja, representam uma classificação dos indivíduos. Podem ser nominais ou ordinais.
+
+    Quando estamos trabalhando com categorias ordinais, existe uma ordenação entre as categorias. Por exemplo: escolaridade (primeiro,
+    segundo e terceiro graus), estágios de uma doença (inicial, intermediário, terminal), mês de observação (janeiro, fevereiro, ...,
+    dezembro), etc.
+
+    Aprendizados:
+        - Importar um CSV;;
+        - Identificar o tipo de uma variável observando seu conteúdo;
+        - Reconhecer o que é categórica ordinal;
+        - Interpretar o que é quantitativa.
