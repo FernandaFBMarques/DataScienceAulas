@@ -76,7 +76,7 @@ budget => orcamento -> variavel quantitativa continuo
 qtde de votos => 1, 2, 3, 4, nao tem 2.5 votos -> variavel quantitativa intervalar
 notas do movielens => 0.5, 1, 1.5,..., 5 nao tem 2.7 -> variavel quantitativa intervalar
 
-    >>>>>>Pergunta Aula 02:<<<<<<<
+    >>>>>>Pergunta Aula 03:<<<<<<<
     "Amanda quer saber todas as línguas faladas pela empresa. Desse modo, como Amanda pode fazer para ver os valores únicos de línguas?"
 
     R: Utilizando a função professores.original_language.unique() para deixar os valores únicos
