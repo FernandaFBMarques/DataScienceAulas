@@ -22,9 +22,18 @@ print(mean_movie_rating.head())
 mean_movie_rating.plot(kind="hist")
 plt.show()
 
-sns.boxplot(mean_movie_rating)
+# sns.boxplot(mean_movie_rating)
+plt.figure(figsize=(5,8))# serve para definir uma proporção para nosso boxplot, como 5x8
+sns.boxplot(y=mean_movie_rating)# o boxplot costuma ser feito na vertical (eixo y)
 plt.show()
 
 print(mean_movie_rating.describe()) # Para auxiliar na análise do gráfico, pedi as medidas descritivas desses dados
 sns.histplot(mean_movie_rating, kde=True)
+plt.show()
+
+sns.histplot(mean_movie_rating, kde=True, bins=10)# uso o arguemento bins para poder definir o número de separações
+plt.show()
+
+plt.hist(mean_movie_rating)
+plt.title("Movie average histogram")
 plt.show()
