@@ -66,3 +66,12 @@ Eu acho que é nome_do_arquivo.head pq é uma lista encadeada, num sei ?
         - Trabalhar com query;
         - Identificar os bins; e
         - Filtrar apenas uma coluna.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+>>>>>>Aula 03:<<<<<<<
+
+a language -> variavel categorica nominal
+1 grau < 2 grau < 3 grau -> variavel categorica ordinal
+budget => orcamento -> variavel quantitativa continuo
+qtde de votos => 1, 2, 3, 4, nao tem 2.5 votos -> variavel quantitativa intervalar
+notas do movielens => 0.5, 1, 1.5,..., 5 nao tem 2.7 -> variavel quantitativa intervalar
