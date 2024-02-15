@@ -16,6 +16,12 @@ print(ratings.rating.describe())# mostro as descrições dos dados de nota
 sns.boxplot(ratings.rating) # atribuo ratings.rating para a função boxplot()
 plt.show()
 
+# !!!!WARNING!!!!  In future pandas versions, grouping columns will not be automatically passed to the function you apply.
+# # Solution 1: Exclude grouping columns
+# df.groupby('group_col')['value'].apply(pd.Series.mean, include_groups=False)
+#
+# # Solution 2: Explicitly select desired columns
+# df.groupby('group_col')[['value']].apply(pd.Series.mean)
 mean_movie_rating = ratings.groupby("movieId").mean().rating # forma de obter a média de cada um dos filmeID sem ter que digitar o comando várias vezes
 # para obter a média das notas, pega o grupo dela e faz o calculo das médias, mostra os 5 primeiros
 plt.hist(mean_movie_rating) # uso o plt para fazer o histograma
