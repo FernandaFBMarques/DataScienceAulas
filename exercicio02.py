@@ -1,6 +1,7 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pyarrow as pa
 
 ratings = pd.read_csv("ratings.csv")
 movies = pd.read_csv("movies.csv")
@@ -22,7 +23,7 @@ plt.show()
 #
 # # Solution 2: Explicitly select desired columns
 # df.groupby('group_col')[['value']].apply(pd.Series.mean)
-mean_movie_rating = ratings.groupby("movieId").mean().rating # forma de obter a média de cada um dos filmeID sem ter que digitar o comando várias vezes
+mean_movie_rating = ratings.groupby("movieId").mean(include_groups=False)["rating"]# forma de obter a média de cada um dos filmeID sem ter que digitar o comando várias vezes
 # para obter a média das notas, pega o grupo dela e faz o calculo das médias, mostra os 5 primeiros
 plt.hist(mean_movie_rating) # uso o plt para fazer o histograma
 plt.title("Movie average histogram")
