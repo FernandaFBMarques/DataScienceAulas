@@ -40,3 +40,11 @@ data_ = pd.DataFrame(data_)
 # ploto o meu grafico em cima do dataframe que eu criei
 sns.barplot(x="language", y="total", data=data_)
 plt.show()
+
+# a uqery eh uma pergunta
+total_per_language_others = tmdb.query("original_language != 'en'") # eu quero as linhas onde a lingua n eh o ingles
+print(total_per_language_others)
+
+sns.catplot(x="original_language", kind="count", data=total_per_language_others) #podemos plotar de uma só vez as categorias contidas nesse conjunto
+# agrupando as línguas e contando elas
+plt.show()
