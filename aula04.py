@@ -21,3 +21,22 @@ plt.show()
 sns.catplot(x="original_language", kind="count", data=tmdb)
 plt.show()
 
+plt.pie(language_count["total"], labels=language_count["original_language"]) # super delicado usar o grafico de torta
+plt.show()
+
+total_per_language = tmdb["original_language"].value_counts()
+total_amount = total_per_language.sum()
+en_total = total_per_language.loc["en"] # uso o loc pq quero identificar onde está o ingles
+remaining_total = total_amount - en_total
+print(en_total, remaining_total)# agora eu tenho so duas categorias
+
+data_ = {
+    'language': ['english', 'others'],
+    'total': [en_total, remaining_total]
+}
+#crio um dataframe em cima desses dados
+data_ = pd.DataFrame(data_)
+
+# ploto o meu grafico em cima do dataframe que eu criei
+sns.barplot(x="language", y="total", data=data_)
+plt.show()
