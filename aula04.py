@@ -20,3 +20,4 @@ plt.show()
 
 sns.catplot(x="original_language", kind="count", data=tmdb)
 plt.show()
+
