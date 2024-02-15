@@ -41,7 +41,7 @@ data_ = pd.DataFrame(data_)
 sns.barplot(x="language", y="total", data=data_)
 plt.show()
 
-# a uqery eh uma pergunta
+# a query eh uma pergunta
 total_per_language_others = tmdb.query("original_language != 'en'") # eu quero as linhas onde a lingua n eh o ingles
 print(total_per_language_others)
 
