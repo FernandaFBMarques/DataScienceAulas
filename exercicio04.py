@@ -36,4 +36,4 @@ plt.show()
 
 #como podemos gerar um gráfico de pizza?
 plt.pie(language_count["total"], labels=language_count["original_language"])
-plt.show()œ
+plt.show()
