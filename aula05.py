@@ -47,9 +47,10 @@ sns.catplot(x="original_language", kind="count", data=films_no_original_language
 # plt.figure(figsize=(5,10))# o plt.figure() n serve pra catplot
 sns.catplot(x="original_language", kind="count", data=films_no_original_language_en,
             aspect=2,
-            # WARNING: Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+            hue="original_language",
             palette="GnBu_d",
-            order=total_per_language_others.index) # a função catplot e mais altonivel, ele vai chamar a função countplot
+            order=total_per_language_others.index,
+            legend=False)# a função catplot e mais altonivel, ele vai chamar a função countplot
 # por isso passo o parâmetro
 plt.show()
 
