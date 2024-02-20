@@ -54,3 +54,12 @@ plt.show()
 # estao seguindo o mesmo comportamento:
 plt.boxplot([ratings_toy_story.rating, ratings_jumanji.rating])
 plt.show()
+
+# Dessa forma, usar a Matplotlib foi mais pratico ja que os dados ja estao separados
+# Mas, o Seaborn permite explorar dados quando ainda nao estao separados
+
+sns.boxplot(x="movieId", y="rating", data=ratings.query("movieId in (1,2)")) # usando a query eu filtro e mostro apenas os dados dos filmes 1 e 2
+plt.show()
+
+sns.boxplot(x="movieId", y="rating", data=ratings.query("movieId in (1,2,3,4,5)")) # outro exemplo
+plt.show()
