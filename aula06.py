@@ -63,3 +63,15 @@ plt.show()
 
 sns.boxplot(x="movieId", y="rating", data=ratings.query("movieId in (1,2,3,4,5)")) # outro exemplo
 plt.show()
+
+############## Desvio Padrao ##############
+
+# Eh uma maneira numerica de verificar o quao distantes estao os outros pontos dessas medidas centrais
+
+print("Jumanjis's Standard Deviation: %.2f" % ratings_jumanji.rating.std(),
+      "\nToy Story's Standard Deviation: %.2f" % ratings_toy_story.rating.std())
+
+# Eh possivel notar como o desvio padrao eh muito maior, mesmo com as medias e medianas sendo iguais
+print(np.mean(film1), np.mean(film2))
+print(np.std(film1), np.std(film2))
+print(np.median(film1), np.median(film2))
